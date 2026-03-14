@@ -39,4 +39,4 @@ WobblePic.exe [image_path_or_folder]
 
 ## License
 
-All rights reserved.
+WobblePic is freeware. Free to use, not for redistribution or modification.
