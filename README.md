@@ -32,10 +32,10 @@ Download the latest installer from the [Releases](https://github.com/igkang00/Wo
 WobblePic.exe [image_path_or_folder]
 ```
 
-- **Left-click + drag** on an image to wobble it.
-- **Right-click + drag** for box selection segmentation.
-- **Mouse wheel** to zoom in/out.
-- Use the file browser panel on the left to navigate folders and open images.
+- **Click + drag** on an object to wobble it.
+- **Click** outside the wobble area to select a different object.
+- **Mouse wheel** to zoom, **middle-click + drag** to pan.
+- **Arrow keys** or **Space/Backspace** to navigate images.
 
 ## License
 
