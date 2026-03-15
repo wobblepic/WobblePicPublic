@@ -1,6 +1,10 @@
 # WobblePic
 
+[![Website](https://img.shields.io/badge/Website-wobblepic.com-6c5ce7?style=for-the-badge)](https://www.wobblepic.com)
+
 An interactive image viewer where you can grab and wobble images like jelly.
+
+![WobblePic Screenshot](screenshot.png)
 
 ## Features
 
