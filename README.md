@@ -43,7 +43,7 @@ WobblePic.exe [image_path_or_folder]
 - **Click** on a red pin dot to release it.
 - **Click** outside the wobble area to select a different object.
 - **Ctrl + drag** to move the selected segment.
-- **Shift/Ctrl + mouse wheel** to zoom the segment only.
+- **Ctrl + mouse wheel** to zoom the segment only.
 - **Mouse wheel** to zoom, **middle-click + drag** to pan.
 - **Arrow keys** or **Space/Backspace** to navigate images.
 - **Tab** to toggle image info overlay, **F1** for tutorial.
