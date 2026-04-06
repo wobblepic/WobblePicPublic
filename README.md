@@ -12,9 +12,11 @@ An interactive image viewer where you can grab and wobble images like jelly.
 - **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Smooth mask boundaries via bilinear logits interpolation.
 - **Pin Deformation** — Right-click or press P during wobble drag to pin the deformation in place. Pin up to 4 points, then wobble other areas while pins hold their shape.
 - **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
-- **File Browser** — Built-in file explorer panel to browse and open images.
-- **GPU Accelerated** — OpenGL shader-based mesh deformation rendering.
+- **File Explorer** — Built-in directory tree and file list for navigating folders and images. Right-click context menus, rename, and clipboard support.
+- **GPU Accelerated** — OpenGL shader-based mesh deformation rendering at 60fps.
 - **Wide GPU Support** — ONNX Runtime + DirectML backend supports AMD, NVIDIA, and Intel GPUs.
+- **Wide Format Support** — JPG, PNG, BMP, GIF, WebP, TIFF, AVIF, HEIC/HEIF.
+- **Ad-Free License** — Optional $3 one-time purchase to remove ads and unlock premium features (directory tree, panel customization).
 
 ## Download
 
@@ -43,10 +45,9 @@ WobblePic.exe [image_path_or_folder]
 - **Click** on a red pin dot to release it.
 - **Click** outside the wobble area to select a different object.
 - **Ctrl + drag** to move the selected segment.
-- **Ctrl + mouse wheel** to zoom the segment only.
 - **Mouse wheel** to zoom, **middle-click + drag** to pan.
 - **Arrow keys** or **Space/Backspace** to navigate images.
-- **Tab** to toggle image info overlay, **F1** for tutorial.
+- **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
 
 ## License
 
