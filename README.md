@@ -9,13 +9,19 @@ An interactive image viewer where you can grab and wobble images like jelly.
 ## Features
 
 - **Wobble Effect** — Click and drag on an image to stretch it like skin. Release to watch it spring back with inertia.
-- **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Smooth mask boundaries via bilinear logits interpolation.
+- **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Draw a box to select a region, Shift+click to add, Alt+click to subtract. Smooth mask boundaries via bilinear logits interpolation.
 - **Pin Deformation** — Right-click or press P during wobble drag to pin the deformation in place. Pin up to 4 points, then wobble other areas while pins hold their shape.
 - **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
+- **Segment Zoom** — Ctrl+wheel to zoom only the selected segment while the background stays fixed.
+- **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
 - **File Explorer** — Built-in directory tree and file list for navigating folders and images. Right-click context menus, rename, and clipboard support.
 - **GPU Accelerated** — OpenGL shader-based mesh deformation rendering at 60fps.
 - **Wide GPU Support** — ONNX Runtime + DirectML backend supports AMD, NVIDIA, and Intel GPUs.
 - **Wide Format Support** — JPG, PNG, BMP, GIF, WebP, TIFF, AVIF, HEIC/HEIF.
+- **Drag & Drop** — Drop images or folders from Windows Explorer to open them instantly.
+- **DPI Scaling** — Automatic Per-Monitor V2 DPI scaling for fonts, icons, panels, and window size.
+- **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
+- **Window State Memory** — Remembers window position, size, and maximized state across sessions.
 - **Ad-Free License** — Optional $3 one-time purchase to remove ads and unlock premium features (directory tree, panel customization).
 
 ## Download
@@ -41,13 +47,21 @@ WobblePic.exe [image_path_or_folder]
 ```
 
 - **Click + drag** on an object to wobble it.
+- **Drag outside mask** to draw a box and select a region.
+- **Shift + click/drag** to add to the segment, **Alt + click/drag** to subtract.
 - **Right-click** or **P** during drag to pin the deformation.
 - **Click** on a red pin dot to release it.
 - **Click** outside the wobble area to select a different object.
 - **Ctrl + drag** to move the selected segment.
-- **Mouse wheel** to zoom, **middle-click + drag** to pan.
+- **Ctrl + wheel** to zoom the selected segment only.
+- **Mouse wheel** to zoom, **Space + drag** or **middle-click + drag** to pan.
+- **R** / **L** to rotate the image 90° clockwise / counter-clockwise.
 - **Arrow keys** or **Space/Backspace** to navigate images.
+- **Delete** to move the current file to the Recycle Bin.
+- **ESC** to release all pins and clear segmentation.
+- **Ctrl + B** to toggle the file explorer panel.
 - **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
+- **Right-click** on the image area for context menu (Edit, Print, Copy, Delete).
 
 ## License
 
