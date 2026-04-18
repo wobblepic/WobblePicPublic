@@ -1,8 +1,10 @@
 # WobblePic
 
 [![Website](https://img.shields.io/badge/Website-wobblepic.com-6c5ce7?style=for-the-badge)](https://www.wobblepic.com)
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows)](https://www.wobblepic.com/download)
+[![macOS](https://img.shields.io/badge/macOS-Sequoia%2B-000000?style=for-the-badge&logo=apple)](https://www.wobblepic.com/download)
 
-An interactive image viewer where you can grab and wobble images like jelly.
+An interactive image viewer where you can grab and wobble images like jelly. Available for **Windows** and **macOS** (Apple Silicon & Intel).
 
 ![WobblePic Screenshot](screenshot.png)
 
@@ -18,7 +20,7 @@ An interactive image viewer where you can grab and wobble images like jelly.
 - **GPU Accelerated** — OpenGL shader-based mesh deformation rendering at 60fps.
 - **Wide GPU Support** — ONNX Runtime + DirectML backend supports AMD, NVIDIA, and Intel GPUs.
 - **Wide Format Support** — JPG, PNG, BMP, GIF, WebP, TIFF, AVIF, HEIC/HEIF.
-- **Drag & Drop** — Drop images or folders from Windows Explorer to open them instantly.
+- **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
 - **DPI Scaling** — Automatic Per-Monitor V2 DPI scaling for fonts, icons, panels, and window size.
 - **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
 - **Window State Memory** — Remembers window position, size, and maximized state across sessions.
@@ -30,21 +32,47 @@ Download the latest installer from the [Releases](https://github.com/wobblepic/W
 
 ## System Requirements
 
+### Windows
 - Windows 10 or later (64-bit)
-- DirectX 12 compatible GPU (for SAM2 segmentation)
-- OpenGL 3.3+ support
+- OpenGL 3.3+ GPU
+- DirectML-compatible GPU (AMD / NVIDIA / Intel) recommended for AI segmentation
+- 4 GB RAM minimum (8 GB recommended), ~600 MB disk (SAM2 included)
+
+### macOS
+- macOS Sequoia or later
+- Apple Silicon (M1 / M2 / M3 / M4) or Intel Mac
+- Apple Silicon uses Neural Engine (CoreML) for fast AI segmentation; Intel Mac uses ONNX Runtime CPU
+- 4 GB RAM minimum (8 GB recommended), ~600 MB disk (SAM2 included)
 
 ## Installation
 
-1. Download `WobblePic_Setup_x.x.x.exe` from [Releases](https://github.com/wobblepic/WobblePicPublic/releases).
+### Windows
+
+1. Download `WobblePic_Setup_X.X.X.exe` from [Releases](https://github.com/wobblepic/WobblePicPublic/releases).
 2. Run the installer and follow the instructions.
 3. Launch WobblePic from the Start Menu or Desktop shortcut.
+
+### macOS
+
+1. Download the DMG matching your Mac from [Releases](https://github.com/wobblepic/WobblePicPublic/releases):
+   - Apple Silicon: `WobblePic-X.X.X-arm64.dmg`
+   - Intel Mac: `WobblePic-X.X.X-x64.dmg`
+2. Open the DMG and drag **WobblePic.app** into the Applications folder.
+3. On first launch, macOS may block the app as unsigned. Open **System Settings → Privacy & Security** and click **Open Anyway**.
+
+Alternative (Terminal):
+
+```bash
+sudo xattr -rd com.apple.quarantine /Applications/WobblePic.app
+```
 
 ## Usage
 
 ```
-WobblePic.exe [image_path_or_folder]
+WobblePic [image_path_or_folder]
 ```
+
+> **macOS users:** Replace `Ctrl` with `Cmd` and `Alt` with `Option` throughout. Trackpad pinch-to-zoom is also supported.
 
 - **Click + drag** on an object to wobble it.
 - **Drag outside mask** to draw a box and select a region.
