@@ -13,13 +13,15 @@ An interactive image viewer where you can grab and wobble images like jelly. Ava
 - **Wobble Effect** — Click and drag on an image to stretch it like skin. Release to watch it spring back with inertia.
 - **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Draw a box to select a region, Shift+click to add, Alt+click to subtract. Smooth mask boundaries via bilinear logits interpolation.
 - **Pin Deformation** — Right-click or press P during wobble drag to pin the deformation in place. Pin up to 4 points, then wobble other areas while pins hold their shape.
+- **Wobble Recording** — Press Ctrl+R or use the right-click menu to record your wobble interactions as a WebP animation. Drag, add pins, and watch the post-release bounce — all captured in one file. Manual stop, with a 30-second safety limit.
 - **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
 - **Segment Zoom** — Ctrl+wheel to zoom only the selected segment while the background stays fixed.
 - **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
 - **File Explorer** — Built-in directory tree and file list for navigating folders and images. Right-click context menus, rename, and clipboard support.
 - **GPU Accelerated** — OpenGL shader-based mesh deformation rendering at 60fps.
 - **Wide GPU Support** — ONNX Runtime + DirectML backend supports AMD, NVIDIA, and Intel GPUs.
-- **Wide Format Support** — JPG, PNG, BMP, GIF, WebP, TIFF, AVIF, HEIC/HEIF.
+- **Animated Image Playback** — Open animated WebP, GIF, or APNG files and play them directly in the main view with a built-in controls bar. Press Space to toggle play/pause. Click or drag at any time to instantly rewind to the first frame and start wobbling that frame.
+- **Wide Format Support** — JPG, PNG, BMP, GIF (animated), WebP (animated), TIFF, AVIF, HEIC/HEIF, APNG.
 - **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
 - **DPI Scaling** — Automatic Per-Monitor V2 DPI scaling for fonts, icons, panels, and window size.
 - **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
@@ -84,9 +86,11 @@ WobblePic [image_path_or_folder]
 - **Ctrl + wheel** to zoom the selected segment only.
 - **Mouse wheel** to zoom, **Space + drag** or **middle-click + drag** to pan.
 - **R** / **L** to rotate the image 90° clockwise / counter-clockwise.
-- **Arrow keys** or **Space/Backspace** to navigate images.
+- **Ctrl + R** to start/stop wobble recording.
+- **Arrow keys** or **Space/Backspace** to navigate images (Space toggles play/pause instead when an animated image is loaded).
+- **Ctrl/Cmd/Alt + arrow keys** for image navigation that works even while zoomed.
 - **Delete** to move the current file to the Recycle Bin.
-- **ESC** to release all pins and clear segmentation.
+- **ESC** to release all pins and clear segmentation; pauses animation playback if one is active.
 - **Ctrl + B** to toggle the file explorer panel.
 - **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
 - **Right-click** on the image area for context menu (Edit, Print, Copy, Delete).
