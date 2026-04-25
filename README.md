@@ -10,22 +10,33 @@ An interactive image viewer where you can grab and wobble images like jelly. Ava
 
 ## Features
 
+### Wobble & Segmentation
+
 - **Wobble Effect** — Click and drag on an image to stretch it like skin. Release to watch it spring back with inertia.
 - **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Draw a box to select a region, Shift+click to add, Alt+click to subtract. Smooth mask boundaries via bilinear logits interpolation.
 - **Pin Deformation** — Right-click or press P during wobble drag to pin the deformation in place. Pin up to 4 points, then wobble other areas while pins hold their shape.
 - **Wobble Recording** — Press Ctrl+R or use the right-click menu to record your wobble interactions as a WebP animation. Drag, add pins, and watch the post-release bounce — all captured in one file. Manual stop, with a 30-second safety limit.
-- **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
 - **Segment Zoom** — Ctrl+wheel to zoom only the selected segment while the background stays fixed.
-- **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
+- **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
+
+### Image Viewer
+
 - **File Explorer** — Built-in directory tree and file list for navigating folders and images. Right-click context menus, rename, and clipboard support.
+- **Animated Image Playback** — Open animated WebP, GIF, or APNG files and play them directly in the main view with a built-in controls bar. Press Space to toggle play/pause. Click or drag at any time to instantly rewind to the first frame and start wobbling that frame.
+- **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
+- **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
+- **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
+- **Wide Format Support** — JPG, PNG, BMP, GIF (animated), WebP (animated), TIFF, AVIF, HEIC/HEIF, APNG.
+
+### Performance & Display
+
 - **GPU Accelerated** — OpenGL shader-based mesh deformation rendering at 60fps.
 - **Wide GPU Support** — ONNX Runtime + DirectML backend supports AMD, NVIDIA, and Intel GPUs.
-- **Animated Image Playback** — Open animated WebP, GIF, or APNG files and play them directly in the main view with a built-in controls bar. Press Space to toggle play/pause. Click or drag at any time to instantly rewind to the first frame and start wobbling that frame.
-- **Wide Format Support** — JPG, PNG, BMP, GIF (animated), WebP (animated), TIFF, AVIF, HEIC/HEIF, APNG.
-- **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
 - **DPI Scaling** — Automatic Per-Monitor V2 DPI scaling for fonts, icons, panels, and window size.
-- **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
 - **Window State Memory** — Remembers window position, size, and maximized state across sessions.
+
+### License
+
 - **Ad-Free License** — Optional $3 one-time purchase to remove ads and unlock premium features (directory tree, panel customization).
 
 ## Download
