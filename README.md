@@ -87,20 +87,28 @@ WobblePic [image_path_or_folder]
 
 > **macOS users:** Replace `Ctrl` with `Cmd` and `Alt` with `Option` throughout. Trackpad pinch-to-zoom is also supported.
 
-- **Click + drag** on an object to wobble it.
-- **Drag outside mask** to draw a box and select a region.
-- **Shift + click/drag** to add to the segment, **Alt + click/drag** to subtract.
-- **Right-click** or **P** during drag to pin the deformation.
-- **Click** on a red pin dot to release it.
-- **Click** outside the wobble area to select a different object.
-- **Ctrl + drag** to move the selected segment.
-- **Ctrl + wheel** to zoom the selected segment only.
-- **Mouse wheel** to zoom, **Space + drag** or **middle-click + drag** to pan.
-- **R** / **L** to rotate the image 90° clockwise / counter-clockwise.
-- **Ctrl + R** to start/stop wobble recording.
+### Image Navigation
+
 - **Arrow keys** or **Space/Backspace** to navigate images (Space toggles play/pause instead when an animated image is loaded).
 - **Ctrl/Cmd/Alt + arrow keys** for image navigation that works even while zoomed.
+- **Mouse wheel** to zoom, **Space + drag** or **middle-click + drag** to pan.
+- **R** / **L** to rotate the image 90° clockwise / counter-clockwise.
 - **Delete** to move the current file to the Recycle Bin.
+
+### Wobble & Segmentation
+
+- **Click + drag** on an object to wobble it.
+- **Click** outside the wobble area to select a different object.
+- **Drag outside mask** to draw a box and select a region.
+- **Shift + click/drag** to add to the segment, **Alt + click/drag** to subtract.
+- **Ctrl + drag** to move the selected segment.
+- **Ctrl + wheel** to zoom the selected segment only.
+- **Right-click** or **P** during drag to pin the deformation.
+- **Click** on a red pin dot to release it.
+- **Ctrl + R** to start/stop wobble recording.
+
+### Interface
+
 - **ESC** to release all pins and clear segmentation; pauses animation playback if one is active.
 - **Ctrl + B** to toggle the file explorer panel.
 - **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
