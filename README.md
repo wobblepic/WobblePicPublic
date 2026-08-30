@@ -23,12 +23,12 @@ An interactive image viewer where you can grab and wobble images like jelly. Ava
 
 ### Image Viewer
 
-- **File Explorer** — Built-in directory tree and file list for navigating folders and images. Right-click context menus, rename, and clipboard support.
+- **File Explorer** — Built-in file list for navigating folders and images. Right-click context menus, rename, and clipboard support. The directory tree and a resizable, hideable panel come with the Ad-Free License.
 - **Animated Image Playback** — Open animated WebP, GIF, or APNG files and play them directly in the main view with a built-in controls bar. Press Space to toggle play/pause. Click or drag at any time to instantly rewind to the first frame and start wobbling that frame.
 - **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
 - **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
 - **EXIF Auto-Rotation** — Automatically rotates images based on EXIF orientation (e.g. smartphone portrait photos).
-- **Wide Format Support** — JPG, PNG, BMP, GIF (animated), WebP (animated), TIFF, AVIF, HEIC/HEIF, APNG.
+- **Wide Format Support** — JPG/JFIF, PNG, BMP, GIF (animated), WebP (animated), TIFF, AVIF, HEIC/HEIF, APNG.
 
 ### Performance & Display
 
@@ -64,7 +64,7 @@ Download the latest installer from the [Releases](https://github.com/wobblepic/W
 ### Windows
 
 1. Download `WobblePic_Setup_X.X.X.exe` from [Releases](https://github.com/wobblepic/WobblePicPublic/releases).
-2. Run the installer and follow the instructions.
+2. Run the installer and follow the instructions. The Windows installer is not code-signed yet, so SmartScreen shows an "unrecognized app" warning — click **More info → Run anyway**.
 3. Launch WobblePic from the Start Menu or Desktop shortcut.
 
 ### macOS
@@ -73,13 +73,7 @@ Download the latest installer from the [Releases](https://github.com/wobblepic/W
    - Apple Silicon: `WobblePic-X.X.X-arm64.dmg`
    - Intel Mac: `WobblePic-X.X.X-x64.dmg`
 2. Open the DMG and drag **WobblePic.app** into the Applications folder.
-3. On first launch, macOS may block the app as unsigned. Open **System Settings → Privacy & Security** and click **Open Anyway**.
-
-Alternative (Terminal):
-
-```bash
-sudo xattr -rd com.apple.quarantine /Applications/WobblePic.app
-```
+3. Double-click to launch. Since v1.4.6 the macOS build is code-signed with an Apple Developer ID and notarized by Apple, so there is no Gatekeeper detour and no Terminal command to run.
 
 ## Usage
 
@@ -112,7 +106,7 @@ WobblePic [image_path_or_folder]
 ### Interface
 
 - **ESC** to release all pins and clear segmentation; pauses animation playback if one is active.
-- **Ctrl + B** to toggle the file explorer panel.
+- **Ctrl + B** to toggle the file explorer panel (Ad-Free License).
 - **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
 - **Right-click** on the image area for context menu (Edit, Print, Copy, Delete).
 
