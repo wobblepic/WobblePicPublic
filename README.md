@@ -15,9 +15,11 @@ An interactive image viewer where you can grab and wobble images like jelly. Ava
 - **Wobble Effect** — Click and drag on an image to stretch it like skin. Release to watch it spring back with inertia.
 - **Smart Segmentation** — Click on an object to auto-detect its boundary using SAM2 (Segment Anything Model 2), then wobble just that object. Draw a box to select a region, Shift+click to add, Alt+click to subtract. Smooth mask boundaries via bilinear logits interpolation.
 - **Pin Deformation** — Right-click or press P during wobble drag to pin the deformation in place. Pin up to 4 points, then wobble other areas while pins hold their shape.
-- **Wobble Recording** — Press Ctrl+R or use the right-click menu to record your wobble interactions as a WebP animation. Drag, add pins, and watch the post-release bounce — all captured in one file. Manual stop, with a 30-second safety limit.
+- **Wobble Recording** — Press Ctrl+R or use the right-click menu to record your wobble interactions. Drag, add pins, and watch the post-release bounce — all captured in one file. Manual stop, with a 30-second safety limit.
+- **Save as MP4, WebP, or GIF** — MP4 is the default and the only one Instagram, TikTok, and X accept; it is also by far the smallest file. GIF works almost everywhere at the cost of size, and WebP keeps the best quality. MP4 uses the encoder built into the OS, so nothing extra is installed.
 - **Segment Zoom** — Ctrl+wheel to zoom only the selected segment while the background stays fixed.
-- **Settings Panel** — Adjust Selection Range, Elasticity, and Bounce in real time via a translucent overlay panel.
+- **Wobble Presets** — **Spring**, **Rubber**, and **Jelly** set the Elasticity and Bounce sliders in one click: a tight fast flutter, the familiar default, or a slow wide sway.
+- **Settings Panel** — Adjust Selection Range, Elasticity, Bounce, and the recording format in real time via a translucent overlay panel.
 
 ### Image Viewer
 
@@ -54,7 +56,7 @@ Download the latest installer from the [Releases](https://github.com/wobblepic/W
 ### macOS
 - macOS Sequoia or later
 - Apple Silicon (M1 / M2 / M3 / M4) or Intel Mac
-- Apple Silicon uses Neural Engine (CoreML) for fast AI segmentation; Intel Mac uses ONNX Runtime CPU
+- Apple Silicon runs AI segmentation through CoreML on the GPU; Intel Mac uses ONNX Runtime on the CPU
 - 4 GB RAM minimum (8 GB recommended), ~600 MB disk (SAM2 included)
 
 ## Installation
