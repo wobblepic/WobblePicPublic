@@ -23,7 +23,8 @@ An interactive image viewer where you can grab and wobble images like jelly. Ava
 
 ### Image Viewer
 
-- **File Explorer** — Built-in file list for navigating folders and images. Right-click context menus, rename, and clipboard support. The directory tree and a resizable, hideable panel come with the Ad-Free License.
+- **File Explorer** — Built-in file list for navigating folders and images. Right-click context menus, rename, and clipboard support. Folders show the names your file manager uses. The directory tree and a resizable, hideable panel come with the Ad-Free License.
+- **Paste an Image** — Copy a picture anywhere — a browser, a screenshot tool, an image editor — and press Ctrl+V. It is saved to `Pictures/WobblePic Pasted` and opens immediately, ready to wobble.
 - **Animated Image Playback** — Open animated WebP, GIF, or APNG files and play them directly in the main view with a built-in controls bar. Press Space to toggle play/pause. Click or drag at any time to instantly rewind to the first frame and start wobbling that frame.
 - **Image Rotation** — R/L keys to rotate the image 90° clockwise/counter-clockwise.
 - **Drag & Drop** — Drop images or folders from Explorer/Finder to open them instantly.
@@ -109,6 +110,7 @@ WobblePic [image_path_or_folder]
 - **Ctrl + B** to toggle the file explorer panel (Ad-Free License).
 - **I** to toggle image info overlay, **Tab** to switch panel focus, **F1** for tutorial.
 - **Right-click** on the image area for context menu (Edit, Print, Copy, Delete).
+- **Ctrl + V** to paste an image from the clipboard. Files copied in Explorer/Finder are pasted into the current folder as before.
 
 ## License
 
